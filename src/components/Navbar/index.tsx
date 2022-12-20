@@ -1,8 +1,13 @@
 import React from "react";
+import { HashLink as Link } from "react-router-hash-link";
+import Resume from "../../assets/pdf/resume.pdf";
 
 const Navbar = () => {
   return (
-    <nav className="navbar has-shadow px-5 py-3">
+    <nav
+      style={{ height: "10vh" }}
+      className="navbar has-shadow is-fixed-top px-5"
+    >
       <div className="navbar-brand">
         <a className="navbar-item is-size-4 has-text-weight-bold" href="#/">
           Bhargav
@@ -11,19 +16,21 @@ const Navbar = () => {
 
       <div id="nav-links" className="navbar-menu">
         <div className="navbar-end">
-          <a className="navbar-item" href="#home">
+          <Link className="navbar-item" smooth to="/#home">
             Home
-          </a>
-          <a className="navbar-item" href="#/">
+          </Link>
+          <Link className="navbar-item" smooth to="/#about">
             About
-          </a>
-          <a className="navbar-item" href="#/">
-            About
-          </a>
-          <a className="navbar-item" href="#/">
+          </Link>
+          <Link className="navbar-item" smooth to="#skills">
             Skills
-          </a>
-          <a className="navbar-item" href="#/">
+          </Link>
+          <a
+            className="navbar-item"
+            href={Resume}
+            download="Bhargav-Resume"
+            target="_blank"
+          >
             Resume
           </a>
           <a className="navbar-item" href="#/">
