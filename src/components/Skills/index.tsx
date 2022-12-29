@@ -14,7 +14,7 @@ const Skills = () => {
     { name: "DSA", completion: "80" },
   ];
   return (
-    <div style={{ height: "90vh" }} id="skills">
+    <div style={{ minHeight: "90vh" }} id="skills">
       <div className="section pb-0">
         <div className="columns is-centered has-text-centered">
           <div className="column is-2">

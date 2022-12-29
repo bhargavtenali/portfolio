@@ -1,8 +1,12 @@
-import React from "react";
-import { HashLink as Link } from "react-router-hash-link";
+import React, { useState } from "react";
+import { NavHashLink as Link } from "react-router-hash-link";
 import Resume from "../../assets/pdf/resume.pdf";
 
 const Navbar = () => {
+  const [activeClass, activeClassHandler] = useState("/#home");
+  const navbarClikcHandler = (e: any) => {
+    activeClassHandler(e.target.getAttribute("href"));
+  };
   return (
     <nav
       style={{ height: "10vh" }}
@@ -13,27 +17,57 @@ const Navbar = () => {
           Bhargav
         </a>
       </div>
-
       <div id="nav-links" className="navbar-menu">
         <div className="navbar-end">
-          <Link className="navbar-item" smooth to="/#home">
+          <Link
+            className={`navbar-item is-tab ${
+              activeClass === "/#home" ? "is-active" : ""
+            }`}
+            smooth
+            to="#home"
+            onClick={navbarClikcHandler}
+          >
             Home
           </Link>
-          <Link className="navbar-item" smooth to="/#about">
+          <Link
+            className={`navbar-item is-tab ${
+              activeClass === "/#about" ? "is-active" : ""
+            }`}
+            smooth
+            to="#about"
+            onClick={navbarClikcHandler}
+          >
             About
           </Link>
-          <Link className="navbar-item" smooth to="#skills">
+          <Link
+            className={`navbar-item is-tab ${
+              activeClass === "/#skills" ? "is-active" : ""
+            }`}
+            smooth
+            to="#skills"
+            onClick={navbarClikcHandler}
+          >
             Skills
           </Link>
+          <Link
+            className={`navbar-item is-tab ${
+              activeClass === "/#qualification" ? "is-active" : ""
+            }`}
+            smooth
+            to="#qualification"
+            onClick={navbarClikcHandler}
+          >
+            Education & Experience
+          </Link>
           <a
-            className="navbar-item"
+            className="navbar-item is-tab"
             href={Resume}
             download="Bhargav-Resume"
             target="_blank"
           >
             Resume
           </a>
-          <a className="navbar-item" href="#/">
+          <a className="navbar-item is-tab" href="#/">
             Contact Me
           </a>
         </div>

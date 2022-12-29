@@ -4,7 +4,7 @@ import Resume from "../../assets/pdf/resume.pdf";
 
 const About = () => {
   return (
-    <div style={{ height: "90vh" }} id="about">
+    <div style={{ minHeight: "90vh" }} id="about">
       <div className="section pb-0">
         <div className="columns is-centered has-text-centered">
           <div className="column is-2">
@@ -24,6 +24,8 @@ const About = () => {
             <img
               style={{
                 borderRadius: "20px",
+                width: "100%",
+                height: "100%",
               }}
               src={myProfileAbout}
               alt="profile-about"

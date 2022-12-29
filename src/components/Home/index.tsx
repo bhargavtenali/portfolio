@@ -4,7 +4,7 @@ import myProfile from "../../assets/img/myProfile2.png";
 const Home = () => {
   return (
     <div
-      style={{ height: "90vh" }}
+      style={{ minHeight: "90vh" }}
       className="p-6 columns is-gapless"
       id="home"
     >

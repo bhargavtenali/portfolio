@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import About from "./components/About";
 import Skills from "./components/Skills";
+import Qualification from "./components/Qualification";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Home />
         <About />
         <Skills />
+        <Qualification />
       </div>
     </div>
   );
