@@ -67,9 +67,6 @@ const Navbar = () => {
           >
             Resume
           </a>
-          <a className="navbar-item is-tab" href="#/">
-            Contact Me
-          </a>
         </div>
       </div>
     </nav>

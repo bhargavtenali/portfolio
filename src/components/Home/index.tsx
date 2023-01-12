@@ -10,7 +10,7 @@ const Home = () => {
     >
       <div className="column is-1 is-flex is-flex-direction-column is-justify-content-center is-align-items-center">
         <div
-          style={{ height: "20%" }}
+          style={{ height: "40%" }}
           className="is-flex is-flex-direction-column is-justify-content-space-between"
         >
           <a href="https://www.linkedin.com/in/bhargavtenali/" target="_blank">
@@ -21,6 +21,16 @@ const Home = () => {
           <a href="https://github.com/bhargavtenali" target="_blank">
             <span className="icon is-medium icon-color">
               <i className="ri-github-line ri-2x"></i>
+            </span>
+          </a>
+          <a href="tel:+91-93985-66627">
+            <span className="icon is-medium icon-color">
+              <i className="ri-phone-line ri-2x"></i>
+            </span>
+          </a>
+          <a href="mailto:bhargavtenali@gmail.com">
+            <span className="icon is-medium icon-color">
+              <i className="ri-mail-add-line ri-2x"></i>
             </span>
           </a>
         </div>
@@ -34,12 +44,12 @@ const Home = () => {
           <h1 className="is-size-1 has-text-weight-bold">Hi, I am Bhargav</h1>
           <p className="is-size-2 has-text-grey">Full Stack Web Developer</p>
           <p className="is-size-4 has-text-weight-medium has-text-grey-dark">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
-            quisquam at nemo totam nihil suscipit asperiores corrupti culpa
-            error laborum.
+            I am a Full Stack Web stack developer with excellent Problem Solving
+            Skills and ability to perform well in a team. Passionate about
+            Coding and enjoy building Web Applications.
           </p>
           <a
-            href="#contact-me"
+            href="tel:+91-93985-66627"
             className="is-size-4 button is-align-self-flex-start is-rounded"
             style={{
               backgroundColor: "#705edc",
