@@ -42,8 +42,10 @@ const data = [
     title: "2022-Present",
     cardTitle: "Full Stack Developer",
     cardSubtitle: "Kayrros",
-    cardDetailedText: `Working on Migration of Millions of Data.
-    Working on developing Modern Frontend Web Apps.`,
+    cardDetailedText: `Worked on Migration of Millions of Data from Excel, Elasticsearch DB, PostgreSQL to modern Schema PostgreSQL DB. 
+    Worked on developing Modern Frontend Web Portal with multiple routes and API integration. Used Stencil.js for developing web components initially. Later integrated all Web
+    components using React and Redux Toolkit. Used Bulma CSS
+    library for styling.`,
   },
 ];
 

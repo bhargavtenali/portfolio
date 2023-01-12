@@ -5,12 +5,16 @@ const Skills = () => {
   const frontendSkillSet = [
     { name: "HTML & CSS", completion: "90" },
     { name: "JavaScript", completion: "80" },
-    { name: "React", completion: "80" },
+    { name: "React & React Hooks", completion: "80" },
+    { name: "Redux & Redux Toolkit", completion: "70" },
+    { name: "Bulma CSS", completion: "80" },
+    { name: "Stencil.js (Web Components Development)", completion: "60" },
   ];
   const backendSkillSet = [
-    { name: "Node & Express", completion: "70" },
+    { name: "Git", completion: "80" },
     { name: "Python", completion: "80" },
-    { name: "SQL & PostgreSQL", completion: "80" },
+    { name: "Node & Express", completion: "70" },
+    { name: "SQL & PostgreSQL & Elasticsearch", completion: "80" },
     { name: "DSA", completion: "80" },
   ];
   return (
