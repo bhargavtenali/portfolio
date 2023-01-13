@@ -4,7 +4,7 @@ import Progressbar from "../ProgressBar";
 const Skills = () => {
   const frontendSkillSet = [
     { name: "HTML & CSS", completion: "90" },
-    { name: "JavaScript", completion: "80" },
+    { name: "JavaScript & TypeScript", completion: "80" },
     { name: "React & React Hooks", completion: "80" },
     { name: "Redux & Redux Toolkit", completion: "70" },
     { name: "Bulma CSS", completion: "80" },

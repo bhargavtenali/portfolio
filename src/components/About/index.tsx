@@ -41,7 +41,7 @@ const About = () => {
                 I’m currently working as Full Stack Developer <br />
                 I’m looking to collaborate on Frontend and Backend
               </p>
-              <div className="is-flex is-flex-direction-row is-justify-content-space-around mb-6">
+              <div className="is-flex is-flex-direction-row is-justify-content-space-between mb-6">
                 <div className="has-text-centered">
                   <h1 className="is-size-3 has-text-weight-bold">01+</h1>
                   <p className="is-size-6 has-text-weight-bold has-text-grey">
