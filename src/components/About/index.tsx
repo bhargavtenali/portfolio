@@ -15,22 +15,14 @@ const About = () => {
       </div>
       <div className="section">
         <div className="columns is-gapless p-6">
-          <div
+          <img
+            className="column is-5"
             style={{
               borderRadius: "20px",
             }}
-            className="column is-5 box is-flex is-flex-direction-column is-justify-content-center is-align-items-center"
-          >
-            <img
-              style={{
-                borderRadius: "20px",
-                width: "100%",
-                height: "100%",
-              }}
-              src={myProfileAbout}
-              alt="profile-about"
-            />
-          </div>
+            src={myProfileAbout}
+            alt="profile-about"
+          />
           <div className="column is-2"></div>
           <div className="column is-5">
             <div

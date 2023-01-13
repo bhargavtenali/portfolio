@@ -1,5 +1,5 @@
 import React from "react";
-import myProfile from "../../assets/img/myProfile2.png";
+import myProfile from "../../assets/img/myProfile3.jpg";
 
 const Home = () => {
   return (
@@ -38,7 +38,7 @@ const Home = () => {
       <div className="column is-1"></div>
       <div className="column is-5 is-flex is-flex-direction-column is-justify-content-center is-align-items-center">
         <div
-          style={{ height: "60%" }}
+          style={{ height: "65%" }}
           className="is-flex is-flex-direction-column is-justify-content-space-between"
         >
           <h1 className="is-size-1 has-text-weight-bold">Hi, I am Bhargav</h1>
@@ -67,7 +67,7 @@ const Home = () => {
       <div className="column is-1"></div>
       <div className="column is-4 is-flex is-flex-direction-column is-justify-content-center is-align-items-center">
         <img
-          style={{ width: "300px", height: "300px" }}
+          style={{ width: "300px", height: "300px", borderRadius: "150px" }}
           src={myProfile}
           alt="profile-pic"
         />

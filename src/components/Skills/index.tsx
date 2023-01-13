@@ -15,7 +15,7 @@ const Skills = () => {
     { name: "Python", completion: "80" },
     { name: "Node & Express", completion: "70" },
     { name: "SQL & PostgreSQL & Elasticsearch", completion: "80" },
-    { name: "DSA", completion: "80" },
+    { name: "Data Structures & Algorithms", completion: "80" },
   ];
   return (
     <div style={{ minHeight: "90vh" }} id="skills">
