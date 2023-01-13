@@ -2,17 +2,18 @@ import React, { useEffect } from "react";
 import { useState } from "react";
 import "./index.css";
 
-const ProgressBar = ({ done }: any) => {
+const ProgressBar = ({ done, start }: any) => {
   const [style, setStyle] = useState({});
 
-  setTimeout(() => {
-    const newStyle = {
-      opacity: 1,
-      width: `${done}%`,
-    };
-
-    setStyle(newStyle);
-  }, 1500);
+  useEffect(() => {
+    if (start) {
+      const newStyle = {
+        opacity: 1,
+        width: `${done}%`,
+      };
+      setStyle(newStyle);
+    }
+  }, [start]);
 
   return (
     <div className="progress">

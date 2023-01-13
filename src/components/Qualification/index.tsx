@@ -77,7 +77,7 @@ const Qualification = () => {
                 mode="VERTICAL_ALTERNATING"
                 cardHeight={130}
                 slideShow
-                slideItemDuration={1500}
+                slideItemDuration={3000}
               >
                 <div className="chrono-icons">
                   <img src={graduation} alt="graduation" />

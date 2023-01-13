@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useState } from "react";
 import Progressbar from "../ProgressBar";
 
 const Skills = () => {
@@ -17,8 +17,17 @@ const Skills = () => {
     { name: "SQL & PostgreSQL & Elasticsearch", completion: "80" },
     { name: "Data Structures & Algorithms", completion: "80" },
   ];
+  const [startFlag, startFlagSetter] = useState(false);
+
   return (
-    <div style={{ minHeight: "90vh" }} id="skills">
+    <div
+      style={{ minHeight: "90vh" }}
+      id="skills"
+      onMouseEnter={(e) => {
+        e.preventDefault();
+        startFlagSetter(true);
+      }}
+    >
       <div className="section pb-0">
         <div className="columns is-centered has-text-centered">
           <div className="column is-2">
@@ -40,7 +49,7 @@ const Skills = () => {
                 <p className="is-size-5 has-text-weight-semibold">
                   {item.name}
                 </p>
-                <Progressbar done={item.completion} />
+                <Progressbar done={item.completion} start={startFlag} />
               </Fragment>
             ))}
           </div>
@@ -57,7 +66,7 @@ const Skills = () => {
                 <p className="is-size-5 has-text-weight-semibold">
                   {item.name}
                 </p>
-                <Progressbar done={item.completion} />
+                <Progressbar done={item.completion} start={startFlag} />
               </Fragment>
             ))}
           </div>
